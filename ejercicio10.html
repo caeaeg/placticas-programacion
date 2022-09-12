@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>EJERCICIO 10</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <script>
+        function mostrarmes(meses) {
+            let num = parseInt(prompt('Ingrese número de mes:'));
+            document.write('Corresponde al mes:' + meses[num - 1]);
+            document.write('<br>');
+          }
+        let meses;
+        meses = new Array(12);
+        meses[0] = 'Enero';
+        meses[1] = 'Febrero';
+        meses[2] = 'Marzo';
+        meses[3] = 'Abril';
+        meses[4] = 'Mayo';
+        meses[5] = 'Junio';
+        meses[6] = 'Julio';
+        meses[7] = 'Agosto';
+        meses[8] = 'Septiembre';
+        meses[9] = 'Octubre';
+        meses[10] = 'Noviembre';
+        meses[11] = 'Diciembre';
+        mostrarmes(meses);
+    </script>
+
+</body>
+
+</html>
+
