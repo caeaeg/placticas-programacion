@@ -1,0 +1,57 @@
+//ejercicio N° 1
+< !DOCTYPE html>
+    <html>
+
+    <head>
+        <title>ejercicio n°1</title>
+    </head>
+
+    <body>
+
+        <script>
+
+            var verdadero, char
+            var valores = [verdadero, false, 2, "hola", "mundo", 3, char]
+
+
+            var valoresStr = []
+            for (let i = 0; i < valores.length; i++) {
+                if (typeof valores[i] === "string") {
+                    valoresStr.push(valores[i])
+                }
+            }
+
+            console.log("Mostrar palabras de menor a mayor segun cantidad de letras: " + valoresStr.sort(function (a, b) { return a, length - b, length }))
+
+            var operador = prompt("ingrese una operacion")
+            switch (operador) {
+                case "+":
+                    var resultado = valores[2] + valores[5]
+                    console.log(`La suma dio: ${resultado}`) 
+                    break;
+                case "-":
+                    var resultado = valores[2] - valores[5]
+                    console.log(`La resta dio ${resultado}`)
+                    break;
+                case "*":
+                    var resultado = valores[2] * valores[5]
+                    console.log(`La multiplicacion dio ${resultado}`)
+                    break;
+                case "/":
+                    var resultado = valores[2] / valores[5]
+                    console.log(`La division dio ${resultado}`)
+                    break;
+
+                default:
+                    break;
+            }
+
+
+
+
+
+        </script>
+
+    </body>
+
+    </html>
