@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<script>
+
+ 
+    var cantidadNumeros = 100;
+    var listado = []
+    while (listado.length < cantidadNumeros) {
+        var numeroAleatorio = Math.ceil(Math.random() * cantidadNumeros);
+        var existe = false;
+        for (var i = 0; i < listado.length; i++) {
+            if (listado[i] == numeroAleatorio) {
+                existe = true;
+                break;
+            }
+        }
+        if (existe) {
+            listado[listado.length] = numeroAleatorio;
+        }
+
+    }
+    document.write("números aleatorios : " + listado);
+</script>

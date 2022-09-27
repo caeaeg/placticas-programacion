@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title> ejercicio N°5 </title>
+    <time> </time>
+</head>
+
+
+<body>
+    <script>
+        function info(cadena) {
+
+            var resultado = "La cadena \"" + cadena + "\" ";
+
+            
+            if (cadena == cadena.toUpperCase()) {
+                resultado += " está formada sólo por mayúsculas";
+            }
+            else if (cadena == cadena.toLowerCase()) {
+                resultado += " está formada sólo por minúsculas";
+            }
+            else {
+                resultado += " está formada por mayúsculas y minúsculas";
+            }
+
+            return resultado;
+        }
+        alert(info("La programacion es ...."));
+        alert(info("FULL STACK DEVELOPER"));
+    </script>
+
+
+
+</body>

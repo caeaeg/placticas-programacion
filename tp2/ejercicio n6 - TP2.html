@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<head>
+    <title> ejercicio N°6</title>
+    <time> </time>
+</head>
+
+
+<body>
+    <script>
+        var vocales = ['a', 'e', 'i', 'o', 'u'];
+
+        var texto = prompt("Introduzca una palabra");
+        var textomin = texto.toLowerCase
+        var posicion = 0
+        var parar = false
+
+        for (var i = 0; i < textomin.length; i++) {
+            for (var j = 0; j < vocales.length; j++) {
+                if (vocales[j] == textomin.charAt(i)) {
+                    posicion = i + 1;
+                    parar = true;
+                    break
+                }
+            }
+            if (parar) {
+                break
+            }
+        }
+
+        document.write("la primera vocal se encuentra en la posicion: " + posicion);
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>

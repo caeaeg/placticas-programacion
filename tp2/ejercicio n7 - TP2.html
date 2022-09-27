@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+
+<head>
+    <title> ejercicio N°7 </title>
+
+</head>
+
+
+<body>
+    <script>
+        function invertirCadena(cad) {
+            var separarCadena = cad.split(""); //separa en letras
+            var invertirArreglo = separarCadena.reverse(); //ordena al reves
+            var unirArreglo = invertirArreglo.join(""); //junta de nuevo
+            return unirArreglo;
+        }
+        var palabra = prompt("INGRESE UNA PALABRA PARA PASARLA AL REVES");
+        var resultado = invertirCadena(palabra);
+        alert (resultado)
+
+    </script>
+
+
+
+</body>
